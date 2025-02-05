@@ -82,7 +82,7 @@ def anonymize_video(
     width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
     height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
-    # Define the codec and create VideoWriter (use "XVID" or "mp4v" depending on your needs)
+    # Define the codec and create VideoWriter
     fourcc = cv2.VideoWriter_fourcc(*'mp4v')
     out = cv2.VideoWriter(out_file, fourcc, fps, (width, height))
 
